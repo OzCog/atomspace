@@ -11,7 +11,12 @@
 # cogutils already requires 3.12, so may as well ask for that.
 # Correct handling of guile module install requires cmake version 3.12
 # or newer, but Ubuntu Bionic 18.04 only has 3.10. Bummer about that.
-CMAKE_MINIMUM_REQUIRED(VERSION 3.12)
+
+cmake_minimum_required(VERSION 3.16)
+cmake_policy(SET CMP0148 NEW)
+
+
+#CMAKE_MINIMUM_REQUIRED(VERSION 3.12)
 
 PROJECT(atomspace)
 
